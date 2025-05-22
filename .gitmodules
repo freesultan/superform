@@ -28,3 +28,9 @@
 [submodule "lib/excessivelysafecall"]
 	path = lib/excessivelysafecall
 	url = https://github.com/nomad-xyz/excessivelysafecall
+[submodule "lib/prb-math"]
+	path = lib/prb-math
+	url = https://github.com/PaulRBerg/prb-math
+[submodule "lib/account-abstraction"]
+	path = lib/account-abstraction
+	url = https://github.com/eth-infinitism/account-abstraction
