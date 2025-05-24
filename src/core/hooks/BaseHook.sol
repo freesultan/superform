@@ -15,6 +15,8 @@ import { ISuperHook } from "../interfaces/ISuperHook.sol";
 ///      Implements the ISuperHook interface defined lifecycle methods
 ///      Uses a transient storage pattern for stateful execution context
 abstract contract BaseHook is ISuperHook {
+    //@>i the most part of the protocol is transient strage
+    //@>q why do they use transient storage? they don't need permanant data. they need it just for that tranaction
     /*//////////////////////////////////////////////////////////////
                                  STORAGE
     //////////////////////////////////////////////////////////////*/

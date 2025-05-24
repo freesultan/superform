@@ -92,7 +92,7 @@ abstract contract SuperExecutorBase is ERC7579ExecutorBase, ISuperExecutor, Reen
         if (!_initialized[msg.sender]) revert NOT_INITIALIZED();
         _initialized[msg.sender] = false;
     }
-
+    //@>i flow starts here
     /// @inheritdoc ISuperExecutor
     function execute(bytes calldata data) external virtual {
         if (!_initialized[msg.sender]) revert NOT_INITIALIZED();
@@ -108,6 +108,7 @@ abstract contract SuperExecutorBase is ERC7579ExecutorBase, ISuperExecutor, Reen
     ///      Each hook is processed through the _processHook method
     /// @param account The smart account executing the operation
     /// @param entry The executor entry containing hook addresses and their data
+    //@>i this will execute an array of hooks
     function _execute(address account, ExecutorEntry memory entry) internal virtual {
         uint256 hooksLen = entry.hooksAddresses.length;
 

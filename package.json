@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"@rhinestone/modulekit": "^0.5.9"
+	}
+}

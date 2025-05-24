@@ -64,3 +64,6 @@ path = "test/mocks/TransientStorageExecutor.sol"
 ethereum = { key = "${TENDERLY_ACCESS_KEY}", chain = 101, url = "${ETH_MAINNET}/verify/etherscan" }
 base = { key = "${TENDERLY_ACCESS_KEY}", chain = 102, url = "${BASE_MAINNET}/verify/etherscan" }
 optimism = { key = "${TENDERLY_ACCESS_KEY}", chain = 103, url = "${OPTIMISM_MAINNET}/verify/etherscan" }
+
+[rpc_endpoints]
+ETH_RPC_URL = "https://eth-mainnet.nodereal.io/v1/3238e8124a5e4215ad14c1953c2c1c2c"
